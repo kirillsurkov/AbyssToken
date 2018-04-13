@@ -4,7 +4,7 @@ module.exports = {
     networks: {
         test: {
             network_id: "*",
-			gasLimit: 10000000,
+            gasLimit: 10000000,
             provider: TestRPC.provider({
                 accounts: Array(12 + 1000).fill(0).map(() => ({balance: 10000 * 10**18})),
                 time: new Date(1523887200000)
